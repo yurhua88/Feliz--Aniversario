@@ -1,0 +1,99 @@
+body{
+  background-image: linear-gradient(to top,#ff2e2e,black);
+  color: white;
+  text-align: center;
+}
+
+ul{
+  text-align: start;
+  line-height: 2em;
+}
+
+img{
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+p{
+  text-align: end;
+}
+
+.texto{
+  text-align: start;
+}
+
+    /* Estilo do bolo (base) */
+    .bolo {
+        position: relative; /* Para posicionar os elementos internos */
+        width: 200px;
+        height: 250px;
+        background-color: #ff963b; /* Cor da massa */
+        border-radius: 10px; /* Bordas arredondadas */
+        margin: 50px auto; /* Centralizar o bolo */
+    }
+
+    /* Estilo das camadas */
+    .camada {
+        width: 180px;
+        height: 70px;
+        margin: 10px auto;
+        background-color: #5c2e0f; /* Cor da massa da camada */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+    }
+
+    /* Posicionar as camadas um pouco mais abaixo */
+    .camada1 { margin-top: 60px; }
+    .camada2 { margin-top: 10px; }
+    .camada3 { margin-top: 10px; }
+
+    /* Estilo da cobertura */
+    .cobertura {
+        width: 200px;
+        height: 50px;
+        background-color: blue; /* Cor da cobertura */
+        border-radius: 0 0 10px 10px; /* Canto inferior arredondado */
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* Estilo das velas */
+    .vela {
+        width: 10px;
+        height: 50px;
+        background-color: #fff; /* Laranja da vela */
+        border-radius: 5px 5px 0 0;
+        position: absolute;
+        bottom: 250px; /* Posição inicial acima do bolo */
+    }
+
+    .vela1 {
+        left: 50px;
+    }
+
+    .vela2 {
+        left: 140px;
+    }
+
+    /* Detalhes da chama da vela */
+    .vela::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 15px;
+        background-color: #ffd700; /* Amarelo da chama */
+        border-radius: 3px 3px 0 0;
+        top: -10px;
+        left: 2px;
+    }
+
+.Confete{
+  color: white;
+  background-color: #8c72d6;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  border-radius: 40px;
+  border: 2px solid white;
+  box-shadow: 3px 4px 10px 5px black;
+}
